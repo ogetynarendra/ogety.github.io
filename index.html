@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Narendra Ogety | Portfolio</title>
+  <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="hero">
+    <img src="avatar.png" alt="Narendra Avatar" class="avatar"/>
+    <h1>Hey, I'm <span class="name">Narendra</span> 👋</h1>
+    <p>Data Analyst & GenAI Learner</p>
+    <input type="text" id="locationInput" placeholder="Where are you from?" oninput="updateGreeting()" />
+    <p id="greeting"></p>
+    <div class="links">
+      <a href="https://github.com/ogetynarendra" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/narendraogety/" target="_blank">LinkedIn</a>
+      <a href="Narendra_Ogety_Data_Analyst_Resume.pdf" target="_blank">Resume</a>
+    </div>
+  </div>
+  <script>
+    function updateGreeting() {
+      const input = document.getElementById('locationInput').value;
+      const greeting = input ? `Nice to meet you from ${input}! 🚀` : '';
+      document.getElementById('greeting').textContent = greeting;
+    }
+  </script>
+</body>
+</html>
