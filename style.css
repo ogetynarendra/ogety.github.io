@@ -1,0 +1,37 @@
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to right, #fce3ec, #eec0f3);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.hero {
+  text-align: center;
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+}
+.name {
+  color: purple;
+}
+.links a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  color: #333;
+  background: #f0f0f0;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.links a:hover {
+  background: #ddd;
+}
